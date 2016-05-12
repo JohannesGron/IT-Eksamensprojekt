@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "CloudPack - Backup Tool",
+  "description": "A backup tool for CloudPack.ml. Browse to CloudPack.ml for more information.",
+  "version": "2.1.3",
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"},
+  "background": {
+    "scripts": ["jquery-1.12.2.min.js", "background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon" : "icon/icon128.png"
+  },
+  "externally_connectable": {
+    "matches": ["*://cloudpack.ml/*"]
+  },
+  "permissions": [
+    "cookies", "tabs", "notifications", "*://*/*"
+  ]
+}

@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body, html, #content {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+
+/* NAVIGATION BAR ----------------------------------------------------------------------------------------------------------*/
+#navigation_bar {
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	width: 100%;
+	display: none;
+  	justify-content: center;
+  	align-items: center;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  	background-color: rgb(26, 56, 76);
+}
+
+#cloudpack {
+	text-decoration:none;
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#icon {
+	width: 50px;
+	height: 31px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+#person {
+	width: 31px;
+	height: 31px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+#name {
+	text-decoration:none;
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 17px;
+}
+
+
+/* TOOL BAR ----------------------------------------------------------------------------------------------------------*/
+#tools {
+	position: fixed;
+	top:0px;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 16px;
+	color: #2A2F2F;
+	text-align: center;
+	margin-top: 71px;
+	background-color: #f4f4f4;
+	font-family: "Montserrat";
+	font-size: 18px;
+}
+
+#icon_tool_sync {
+	margin-left: 500px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+#icon_tool_delete {
+	cursor: pointer;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: none;
+}
+
+#icon_tool_download {
+	cursor: pointer;
+	display: none;
+}
+
+
+/* FILE VIEW -------------------------------------------------------------------------------------------------------------*/
+#file_view_div {
+	margin-top: 150px;
+	width: 100%;
+	display: flex;
+  	justify-content: center;
+}
+
+#file_view {
+	width: 802px;
+	border-top: 3px solid #e5e5e5;
+	margin-bottom: 50px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.fv_items {
+	display: none;
+	margin-left: 50px;
+	width: 100%;
+}
+
+.fv_name {
+	padding-top: 5px;
+	border-bottom: 1px solid #e5e5e5;
+	height: 35px;
+	width: 100%;
+}
+
+.fv_name:hover {
+	cursor: pointer;
+	background-color: #e3f2ff;
+}
+
+.course {
+	display: inline-block;
+}
+
+/* STUFF FOR EACH ELEMENT */
+.fv_icon {
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	margin-left: 3px;
+}
+
+.fv_name_a {
+	margin-left: 8px;
+	font-family: "Montserrat";
+	font-size: 14px;
+}
+
+
+/* FOOTER ------------------------------------------------------------------------------------------------------------------------------------*/
+#footer {
+	background-color: #282828;
+	display: flex;
+  	justify-content: center;
+  	align-items: top;
+}
+
+.footer_box {
+	width: 200px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 0 20px 0 20px;
+	color: white;
+}
+
+.footer_headline {
+	font-family: "Montserrat";
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+	display: block;
+	padding-bottom: 18px;
+}
+
+
+/* About CloudPack */
+.footer_text {
+	line-height: 120%;
+	word-wrap: break-word;
+	font-family: "Montserrat";
+	font-size: 13px;
+	color: #676767;
+}
+
+#footer_div_text {
+	text-align: left;
+}
+
+#about_box {
+	width: 620px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 0 20px 0 20px;
+}
+
+
+/* Keep Connected */
+.social {
+	font-family: "Montserrat";
+	font-size: 13px;
+	color: #676767;
+}
+
+.social_icons {
+	padding-right: 15px;
+}
+
+.social_box {
+	display: flex;
+  	align-items: center;
+  	padding-bottom: 7px;
+}
+
+
+/* Contact Information */
+.inf {
+	font-family: "Montserrat";
+	font-size: 13px;
+	color: #676767;
+}
+
+.item {
+	margin-bottom: 10px;
+}
+
+
+/* POPUP -------------------------------------------------------------------------------------------------------------*/
+#popup {
+	display: none;
+}
+
+#popup_content {
+	text-align: center;
+}
+
+#icon_and_logo {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#huge_icon {
+	width: 80px;
+	height: 50px;
+}
+
+#popup_name {
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+#message {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: white;
+	width: 300px;
+	padding: 15px 30px 20px 30px;
+}
+
+.step_message {
+	color: #434545;
+	font-family: "Montserrat";
+	font-size: 20px;
+}
+
+.step_text {
+	color: #434545;
+	font-family: "Montserrat";
+	font-size: 12px;
+}
+
+.step_message_div {
+	margin-top: 11px;
+	text-align: left;
+}
+
+.step_button {
+	color: white;
+	font-family: "Montserrat";
+	font-size: 15px;
+	outline: 0;
+	border: 0;
+	background: #4CAF50;
+	padding: 15px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.step_button:hover {
+	background: #3FA943;
+}
+
+#chrome_icon {
+	margin-top: 5px;
+	width: 150px;
+	height: 150px;
+}
+
+#itslearning_icon {
+	margin-top: 15px;
+	width: 150px;
+	height: 150px;
+}
+
+#step2 {
+	width: 100%;
+}
